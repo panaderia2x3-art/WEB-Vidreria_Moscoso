@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vidriería Moscoso</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- NAVEGADOR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm sticky-top p-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-danger" href="inicio.html">Vidriería Moscoso</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto fw-semibold">
+            <a class="nav-link active" href="inicio.html">INICIO</a>
+            <a class="nav-link" href="servicio.html">SERVICIO</a>
+            <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+            <a class="nav-link" href="contacto.html">CONTACTOS</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CARRUSEL CON MENSAJE SUPUESTO -->
+    <section class="position-relative text-white" style="height: 500px">
+      <div id="carouselExampleSlidesOnly" class="carousel slide h-100" data-bs-ride="carousel">
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100">
+            <img
+              src="imagenes/build-vidrio-2.jpg"
+              class="w-100 h-100 object-fit-cover"
+              style="object-position: center"
+              alt="Instalación de mamparas de vidrio"
+            />
+          </div>
+
+          <div class="carousel-item h-100">
+            <img
+              src="imagenes/mampara1.jpg"
+              class="w-100 h-100 object-fit-cover"
+              style="object-position: center"
+              alt="Mampara de vidrio"
+            />
+          </div>
+
+          <div class="carousel-item h-100">
+            <img
+              src="imagenes/Instalacion-de-Mamparas-de-Vidrio.webp"
+              class="w-100 h-100 object-fit-cover"
+              style="object-position: center"
+              alt="Instalación de mamparas de vidrio"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center text-md-start p-3 p-md-5 bg-dark bg-opacity-50 text-white"
+      >
+        <div class="w-100 ps-lg-5 ms-lg-5">
+          <h2 class="display-4 fw-bold">Vidrios de calidad</h2>
+          <p class="lead w-100 w-md-75 mx-md-0 mx-auto my-2">
+            Ofrecemos instalaciones de espejos, mamparas, policarbonato y más.
+          </p>
+          <a href="contacto.html" class="btn btn-danger mt-2 px-4 py-2 fw-semibold">Contáctanos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TARJETAS DE SERVICIO -->
+    <div class="container-fluid py-5" style="background-color: #f8f9fa">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">NOSOTROS OFRECEMOS</h2>
+          <div class="border-bottom border-4 border-danger mx-auto mt-2" style="width: 100px"></div>
+        </div>
+
+        <div class="row justify-content-center g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border border-2 border-danger shadow-sm text-center p-4">
+              <div class="card-body d-flex flex-column align-items-center">
+                <i class="bi bi-hammer display-4 text-danger mb-3"></i>
+                <h5 class="card-title fw-bold">Instalación de calidad</h5>
+                <p class="card-text text-muted">
+                  Garantizamos acabados profesionales y duraderos en cada proyecto de vidriería.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border border-2 border-danger shadow-sm text-center p-4">
+              <div class="card-body d-flex flex-column align-items-center">
+                <i class="bi bi-lightning-charge display-4 text-danger mb-3"></i>
+                <h5 class="card-title fw-bold">Atención inmediata</h5>
+                <p class="card-text text-muted">
+                  Respondemos rápido a tus solicitudes y cumplimos con los plazos establecidos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border border-2 border-danger shadow-sm text-center p-4">
+              <div class="card-body d-flex flex-column align-items-center">
+                <i class="bi bi-headset display-4 text-danger mb-3"></i>
+                <h5 class="card-title fw-bold">Excelente Asesoría</h5>
+                <p class="card-text text-muted">
+                  Te orientamos para elegir los materiales idóneos según tus necesidades y espacio.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MULTICARRUSEL MEJORES TRABAJOS -->
+    <div class="container my-5 py-4">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">MEJORES PRODUCTOS</h2>
+        <div class="border-bottom border-4 border-danger mx-auto mt-2" style="width: 120px"></div>
+      </div>
+
+      <div id="multiItemCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row justify-content-center g-4">
+              <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="imagenes/build-vidrio-2.jpg"
+                    alt="Trabajo 1"
+                    class="card-img-top object-fit-cover"
+                    style="height: 250px"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="imagenes/build-vidrio-2.jpg"
+                    alt="Trabajo 2"
+                    class="card-img-top object-fit-cover"
+                    style="height: 250px"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="imagenes/build-vidrio-2.jpg"
+                    alt="Trabajo 3"
+                    class="card-img-top object-fit-cover"
+                    style="height: 250px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center g-4">
+              <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="imagenes/mampara1.jpg"
+                    alt="Trabajo 4"
+                    class="card-img-top object-fit-cover"
+                    style="height: 250px"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="imagenes/mampara1.jpg"
+                    alt="Trabajo 5"
+                    class="card-img-top object-fit-cover"
+                    style="height: 250px"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="imagenes/mampara1.jpg"
+                    alt="Trabajo 6"
+                    class="card-img-top object-fit-cover"
+                    style="height: 250px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#multiItemCarousel"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bg-dark rounded-circle p-3"
+            aria-hidden="true"
+          ></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#multiItemCarousel"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bg-dark rounded-circle p-3"
+            aria-hidden="true"
+          ></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- FOOTER DE LA PÁGINA -->
+    <footer class="bg-dark text-light pt-5 pb-3 border-top border-3 border-danger">
+      <div class="container">
+        <div class="row g-4 mb-4">
+          <div class="col-lg-3 col-md-6">
+            <p class="text-white mb-2 fw-bold fs-5">Dirección</p>
+            <p class="text-light mb-1">
+              <i class="bi bi-building-fill text-danger me-2"></i> Calle Borges Mz Ñ Lt 1.
+            </p>
+            <p class="text-light small text-white-50">
+              A media cuadra de la Av. Tomás Marsano cuadra 6
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <p class="text-white mb-2 fw-bold fs-5">Email</p>
+            <p class="text-light">
+              <i class="bi bi-envelope-fill text-danger me-2"></i> VidreriaMoscoso@gmail.com
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <p class="text-white mb-2 fw-bold fs-5">Teléfono</p>
+            <p class="text-light mb-1">
+              <i class="bi bi-whatsapp text-success me-2"></i> 955 259 809
+            </p>
+            <p class="text-light mb-1">
+              <i class="bi bi-whatsapp text-success me-2"></i> 955 259 726
+            </p>
+            <p class="text-light mb-0">
+              <i class="bi bi-whatsapp text-success me-2"></i> 981 238 458
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <p class="text-white mb-2 fw-bold fs-5">Horarios</p>
+            <p class="text-light mb-1">
+              <i class="bi bi-alarm text-danger me-2"></i> Lunes a Sábado: 8:00 a 16:00
+            </p>
+            <p class="text-light mb-0">
+              <i class="bi bi-alarm text-danger me-2"></i> Domingos: 10:00 a 15:00
+            </p>
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-12">
+            <a href="#" class="text-light fs-4 me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light fs-4 me-3"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="text-light fs-4"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <hr class="border-secondary mb-4" />
+
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <small class="text-white-50"
+              >&copy; 2026 Vidriería Moscoso. Todos los derechos reservados.</small
+            >
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <div class="d-inline-flex gap-3">
+              <a href="inicio.html" class="text-white-50 text-decoration-none small">Inicio</a>
+              <a href="servicio.html" class="text-white-50 text-decoration-none small">Servicios</a>
+              <a href="nosotros.html" class="text-white-50 text-decoration-none small">Nosotros</a>
+              <a href="contacto.html" class="text-white-50 text-decoration-none small">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
