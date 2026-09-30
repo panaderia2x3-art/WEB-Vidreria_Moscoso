@@ -1,0 +1,47 @@
+<div class="container my-5">
+  <div class="text-center mb-5">
+    <h2 class="fw-bold">NUESTROS SERVICIOS</h2>
+    <div class="border-bottom border-4 border-danger mx-auto mt-2" style="width: 120px"></div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      @for {
+        <div class="card mb-4 shadow-sm border-0 overflow-hidden">
+          <div class="row g-0 aling-items-center">
+            <div class="col-md-5">
+              <img
+                [src]=""
+                [alt]=""
+                class="img-fluid w-100 h-100 object-fit-cover"
+                style="min-height: 250px"
+              />
+            </div>
+
+            <div class="col-md-7">
+              <div class="card-body p-4 p-lg-5">
+                <h3 class="card-title fw-bold text-danger mb-3">
+                  {{//titulo}}
+                </h3>
+                <p class="card-text text-muted fs-5 mb-4">
+                  {{//descripcion}}
+                </p>
+                <p class="card-text mb-4">
+                  <small class="text-body-secondary"
+                    ><i class="bi bi-clock me-1">Actualizado recientemente</i></small
+                  >
+                </p>
+                <a
+                  [href]="'/servicio-' + tipo"
+                  class="btn btn-danger px-4 py-2 fw-semibold"
+                  role="button"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>

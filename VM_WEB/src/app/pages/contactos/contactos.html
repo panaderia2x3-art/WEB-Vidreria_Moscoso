@@ -1,0 +1,108 @@
+<header class="card text-bg-dark mb-5 border-0 rounded-0">
+  <img
+    src="imagenes/Contactanos_moscoso.jpg"
+    class="card-img-top object-fit-cover"
+    alt="Fondo de contactos"
+    style="width: 100%; height: 450px; filter: brightness(0.6)"
+  />
+  <div
+    class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center"
+  >
+    <h1 class="card-title display-3 fw-bold mb-3">Contáctanos</h1>
+    <p class="card-text fs-5">
+      Ingrese sus datos en el formulario o comuníquese a través de nuestras redes sociales.
+    </p>
+  </div>
+</header>
+
+<!-- SECCION PRINCIPAL: FORMULARIO Y DATOS -->
+<section class="container mb-5">
+  <div class="row g-5 align-items-start justify-content-center">
+    <!-- FORMULARIO DE CONTACTO -->
+    <div class="col-lg-6 col-12">
+      <h2 class="text-center fw-bold mb-2">Déjanos tus datos</h2>
+      <div class="border-bottom border-danger border-2 mb-4 mx-auto" style="width: 60px"></div>
+
+      <form class="needs-validation" novalidate>
+        <div class="mb-3">
+          <label for="nombre" class="form-label fw-semibold">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombre"
+            placeholder="Ingrese su nombre"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="apellido" class="form-label fw-semibold">Apellido</label>
+          <input
+            type="text"
+            class="form-control"
+            id="apellido"
+            placeholder="Ingrese su apellido"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="telefono" class="form-label fw-semibold">Número de Teléfono</label>
+          <input type="tel" class="form-control" id="telefono" placeholder="999 999 999" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label fw-semibold">Correo electrónico</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="name@example.com"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="consulta" class="form-label fw-semibold">Consulta</label>
+          <textarea
+            class="form-control"
+            id="consulta"
+            rows="4"
+            placeholder="Ingrese su consulta sobre mamparas, ventanas o servicios..."
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-danger w-100 py-2 fw-semibold">Enviar Mensaje</button>
+      </form>
+    </div>
+
+    <!-- INFORMACIÓN Y MAPA -->
+    <div class="col-lg-6 col-12">
+      <h2 class="text-center fw-bold mb-2">Encuéntranos</h2>
+      <div class="border-bottom border-danger border-2 mb-4 mx-auto" style="width: 60px"></div>
+
+      <div class="ratio ratio-16x9 mb-4 shadow-sm rounded overflow-hidden">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124869.62579812527!2d-77.08800992298232!3d-12.2031414819823624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c906e85d9d2f%3A0xe12a5409e5709a98!2sVidrieria%20Moscoso!5e0!3m2!1ses!2spe!4v1789405506744!5m2!1ses!2spe"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </div>
+
+      <div class="d-flex align-items-center mb-2">
+        <p class="fw-bold mb-0 me-2 text-danger"><i class="bi bi-whatsapp me-1"></i> Teléfonos:</p>
+        <p class="mb-0 text-secondary">+51 955 259 809 / +51 955 259 726</p>
+      </div>
+      <div class="d-flex align-items-center mb-2">
+        <p class="fw-bold mb-0 me-2 text-primary"><i class="bi bi-facebook me-1"></i> Facebook:</p>
+        <a href="https://facebook.com" target="_blank" class="text-decoration-none text-secondary"
+          >/VidreriaMoscoso</a
+        >
+      </div>
+      <div class="d-flex align-items-center mb-2">
+        <p class="fw-bold mb-0 me-2 text-dark"><i class="bi bi-tiktok me-1"></i> TikTok:</p>
+        <a href="https://tiktok.com" target="_blank" class="text-decoration-none text-secondary"
+          >@VidreriaMoscoso</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
