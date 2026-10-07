@@ -41,69 +41,24 @@
 <section class="container mb-5 py-3">
   <h2 class="text-center fw-bold mb-5">Nuestro personal</h2>
   <div class="row g-4 justify-content-center">
-    <!-- TARJETA 1 -->
-    <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
-      <div class="card shadow-sm border-0 w-100" style="max-width: 18rem">
-        <img
-          src="imagenes/empleado-generico.jpg"
-          class="card-img-top object-fit-cover"
-          alt="Empleado 1"
-          style="height: 200px"
-        />
-        <div class="card-body">
-          <p class="card-text text-muted small">
-            Profesional calificado en instalación y acabado de estructuras de vidrio.
-          </p>
+    @for (empleado of empleados; track empleado.id) {
+      <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+        <div class="card shadow-sm border-0 w-100" style="max-width: 180rem">
+          <img
+            [src]="empleado.foto_emp"
+            class="card-img-top object-fit-cover"
+            style="height: 200px"
+          />
+          <div class="card-body">
+            <h4 class="fw-bold">
+              {{ empleado.nombre }}
+            </h4>
+            <p class="card-text text-muted small">
+              {{ empleado.descripcion }}
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- TARJETA 2 -->
-    <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
-      <div class="card shadow-sm border-0 w-100" style="max-width: 18rem">
-        <img
-          src="imagenes/empleado-generico.jpg"
-          class="card-img-top object-fit-cover"
-          alt="Empleado 2"
-          style="height: 200px"
-        />
-        <div class="card-body">
-          <p class="card-text text-muted small">
-            Especialista en asesoría técnica y metrados para proyectos residenciales.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- TARJETA 3 -->
-    <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
-      <div class="card shadow-sm border-0 w-100" style="max-width: 18rem">
-        <img
-          src="imagenes/empleado-generico.jpg"
-          class="card-img-top object-fit-cover"
-          alt="Empleado 3"
-          style="height: 200px"
-        />
-        <div class="card-body">
-          <p class="card-text text-muted small">
-            Técnico montajista con amplia experiencia en mamparas templadas.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- TARJETA 4 -->
-    <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
-      <div class="card shadow-sm border-0 w-100" style="max-width: 18rem">
-        <img
-          src="imagenes/empleado-generico.jpg"
-          class="card-img-top object-fit-cover"
-          alt="Empleado 4"
-          style="height: 200px"
-        />
-        <div class="card-body">
-          <p class="card-text text-muted small">
-            Encargado de logística, control de calidad y entrega segura de pedidos.
-          </p>
-        </div>
-      </div>
-    </div>
+    }
   </div>
 </section>

@@ -6,6 +6,11 @@
     "analytics": "6282c393-1b16-4987-8693-91d90c304f94"
   },
   "newProjectRoot": "projects",
+  "schematics": {
+    "@angular/schematics:component": {
+      "style": "scss"
+    }
+  },
   "projects": {
     "VM_WEB": {
       "projectType": "application",

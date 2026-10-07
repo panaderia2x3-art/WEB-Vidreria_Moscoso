@@ -1,0 +1,41 @@
+.caja {
+  .card {
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+
+    /* Cuando la tarjeta completa recibe el :hover */
+    &:hover {
+      transform: translateY(-8px);
+      border-color: #dc3545;
+      box-shadow:
+        0 0 20px rgba(220, 53, 69, 0.4),
+        0 0 10px rgba(220, 53, 69, 0.2) !important;
+
+      /* Aplicamos la animación al martillo aquí dentro, SIN el :hover en el icono */
+      .bi-hammer {
+        animation: martillo-moviendose 0.5s infinite alternate;
+      }
+      .bi-lightning-charge {
+        animation: rayo-maloso 0.3s infinite alternate;
+      }
+    }
+  }
+
+  @keyframes martillo-moviendose {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-40deg);
+    }
+  }
+
+  @keyframes rayo-maloso {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(5px);
+    }
+  }
+}
