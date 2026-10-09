@@ -1,0 +1,15 @@
+.caja-fila {
+    overflow: hidden; // Asegura que si sale un poco, se oculte limpiamente dentro de su propia caja
+    
+    .caja-img {
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+        
+            transform: translatey(-5px); // Hace zoom solo a la imagen al pasar el cursor por la caja
+        
+    }
+    }
+
+    
+}
+
