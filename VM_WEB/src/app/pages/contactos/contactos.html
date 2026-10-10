@@ -16,14 +16,14 @@
 </header>
 
 <!-- SECCION PRINCIPAL: FORMULARIO Y DATOS -->
-<section class="container mb-5" >
+<section class="container mb-5">
   <div class="row g-5 align-items-start justify-content-center">
     <!-- FORMULARIO DE CONTACTO -->
-    <div class="col-lg-6 col-12 " >
+    <div class="col-lg-6 col-12">
       <h2 class="text-center fw-bold mb-2">Déjanos tus datos</h2>
       <div class="border-bottom border-danger border-2 mb-4 mx-auto" style="width: 60px"></div>
 
-      <form class="needs-validation" novalidate >
+      <form class="needs-validation" novalidate>
         <div class="mb-3">
           <label for="nombre" class="form-label fw-semibold">Nombre</label>
           <input
@@ -63,7 +63,8 @@
           <textarea
             class="form-control"
             id="consulta"
-            rows="4"
+            rows="6"
+            [value]="textoConsulta"
             placeholder="Ingrese su consulta sobre mamparas, ventanas o servicios..."
             required
           ></textarea>

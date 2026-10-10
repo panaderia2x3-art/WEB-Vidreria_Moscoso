@@ -25,14 +25,13 @@
                       class="card h-100 boreder-0 shadow-sm caja-img"
                       [class.d-none]="$index === 2"
                       [class.d-md-block]="$index === 2"
-                      
                     >
                       <img
                         [src]="p.img"
                         [alt]="p.alt"
                         class="card-img-top object-fit-cover"
                         style="height: 220px"
-                        (click)="abrirModal(p.id, p.descripcion,p.img,p.alt, p.titulo)"
+                        (click)="abrirModal(p.id, p.descripcion, p.img, p.alt, p.titulo)"
                       />
                     </div>
                   </div>
@@ -74,29 +73,30 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">{{itemSeleccionado.titulo}}</h5>
+          <h5 class="modal-title">{{ itemSeleccionado.titulo }}</h5>
           <button type="button" class="btn-close" (click)="cerrarModal()"></button>
         </div>
         <div class="modal-body">
-          <div  class="container justify-content-center text-center mb-3">
+          <div class="container justify-content-center text-center mb-3">
             <img
-            [src]="itemSeleccionado.img"
-            [alt]="itemSeleccionado.alt"
-            style="max-width: 100%; height: 350px; object-fit: cover;"
-            class="img-fluid mb-3">
+              [src]="itemSeleccionado.img"
+              [alt]="itemSeleccionado.alt"
+              style="max-width: 100%; height: 350px; object-fit: cover"
+              class="img-fluid mb-3"
+            />
           </div>
-          
-          <p>{{itemSeleccionado.descripcion}}</p>
-          
+
+          <p>{{ itemSeleccionado.descripcion }}</p>
         </div>
-        
+
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" (click)="cerrarModal()">
-            Cerrar
+          <button type="button" class="btn btn-secondary" (click)="cerrarModal()">Cerrar</button>
+
+          <button type="button" class="btn btn-danger" (click)="cotizarProducto(itemSeleccionado)">
+            Solicitar Cotización
           </button>
-      </div>
+        </div>
       </div>
     </div>
   </div>
 }
-
